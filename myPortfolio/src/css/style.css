@@ -1,0 +1,56 @@
+body {
+    padding-bottom: 5%;
+    /* width: 100%; */
+}
+
+
+h1 {
+    font-size: 60px;
+    width: 60%;
+    margin: 5% auto;
+    color: black;
+}
+h2 {
+    font-size: 25px;
+}
+h4 {
+    font-size: 20px;
+}
+main {
+    width: 60%;
+    margin: 5% auto;
+    /* display: flex;
+    flex-direction: column; */
+    background: #aaf5f5
+
+}
+article {
+    font-size: 110%;
+    margin: 3%;
+    border: 3px solid black;
+    background:#61ecec;
+}
+#first {
+    background-color: blue;
+
+}
+.second {
+    background-color: #ffb3b3;
+    
+}
+.fourth {
+    background-color: rgba(89, 63, 191, 0.59);
+        
+}
+.fifth {
+    background-color: crimson;
+    font-size: 25px !important;  
+
+}
+#blogHeader {
+    margin-bottom: 0px;
+}
+article::first-letter {
+    color: yellow;
+    font-size: 130%;
+  }
