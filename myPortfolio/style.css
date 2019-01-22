@@ -11,11 +11,12 @@ body {
     margin: 3% 10%;
   }
   
-  header {
+   header {
     display: grid;
     grid-template-columns: 40% 60%;
     width: 100%;
-  }
+  } 
+  
   
   main {
     height: auto;
@@ -35,11 +36,11 @@ body {
     background: transparent;
     padding: 20px; 
     text-align: center;
-    border: 2px solid white;
+    border: 6px solid white;
   }
   
   .has-border {
-    border-radius: 25px;
+    border-radius: 20px;
     border: 2px solid #0795C3;
     background: none;
     padding: 20px; 
