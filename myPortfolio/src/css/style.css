@@ -1,35 +1,48 @@
-body {
-    padding-bottom: 5%;
-    /* width: 100%; */
+header {
+    margin-top: -60px;
 }
 
+
+
+body {
+    padding-bottom: 5%;
+}
 
 h1 {
     font-size: 60px;
     width: 60%;
     margin: 5% auto;
     color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 h2 {
+    padding: 2%;
     font-size: 25px;
 }
+
 h4 {
+    padding: 1%;
     font-size: 20px;
 }
+
 main {
+    border: 3px solid black;
+    border-radius: 20px;
     width: 60%;
     margin: 5% auto;
-    /* display: flex;
-    flex-direction: column; */
     background: #aaf5f5
 
 }
+
 article {
+    border-radius: 20px;
+    padding: 3%;
     font-size: 110%;
     margin: 3%;
-    border: 3px solid black;
+    border: 2px solid gray;
     background:#61ecec;
-}
+    }
 #first {
     background-color: blue;
 
@@ -45,12 +58,45 @@ article {
 .fifth {
     background-color: crimson;
     font-size: 25px !important;  
-
 }
+
 #blogHeader {
     margin-bottom: 0px;
 }
-article::first-letter {
-    color: yellow;
-    font-size: 130%;
+.logo {
+    width: 130px;
+    height: 130px;
+    margin: 3% 10%;
   }
+  article:hover::first-letter {
+    color: yellow;
+    font-size: 130%; 
+  }
+  nav > a {
+    margin: 2% 1% 3%;
+    height: 10%;
+    width: 15%;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 25px;
+    background: transparent;
+    padding: 20px; 
+    text-align: center;
+    border: 2px solid white;
+  }
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 60%;
+  }
+  .has-border {
+    border-radius: 25px;
+    border: 2px solid #0795C3;
+    background: none;
+    padding: 15px; 
+  } 
+footer img {
+      width: 100%;
+    }
+  
