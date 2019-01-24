@@ -71,6 +71,13 @@ body {
 h5 {
     color: black;
 }
+.item {
+    display: inline-block;
+    width: 94%;
+    margin: 1%;
+    height: 25px;
+    background: #ccc;
+}
 
 
 
