@@ -1,0 +1,115 @@
+
+.grid-container {
+    height: 300px;  
+    margin: auto;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 20% 20% 20% 20% 20%; 
+    border: 2px solid black;
+    border-radius: 8px;
+    width: 300px; 
+    background:  rgb(65, 65, 66);
+}
+
+div button {
+    grid-column: 1/5;
+    grid-row: 2/5;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background: lightskyblue;
+    font-size: 20px;
+}   
+ 
+.display {
+    grid-column: 1/5;
+    grid-row: 1/2; 
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    border-top: 2px solid #C1C1C1;
+	border-right: 2px solid #C1C1C1;
+	border-bottom: 2px solid #FFF;
+	border-left: 2px solid #FFF;
+	background-color: #FFF;
+	box-shadow: inset 0px 0px 10px #030303, inset 0px -20px 1px rgba(150, 150, 150, .2);
+}
+
+.one {
+    grid-column: 1/5;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+}
+
+.two {
+    grid-column: 1/5;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+}
+
+.three {
+    grid-column: 1/5;
+    grid-row: 4/5;
+    display: flex;
+    justify-content: center;
+}
+
+.four {
+    grid-column: 1/5;
+    grid-row: 5/6;
+    display: flex;
+    justify-content: center;
+}
+
+#clear {
+    color: #FFF;
+	text-shadow: -1px -1px 0px #44006F;
+	background-color: #D20000;
+	border-top: 2px solid #FF8484;
+	border-right: 2px solid #FF8484;
+	border-bottom: 2px solid #800000;
+	border-left: 2px solid #800000;
+	box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #B00000;
+}
+
+button {
+    margin: 2px;
+}
+
+#num {
+    background: lightgrey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
