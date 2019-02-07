@@ -1,7 +1,6 @@
-
 html {
     height: 100%;
-  }
+}
   body {
     height: auto;
     width: 100%;
@@ -45,7 +44,7 @@ html {
      height: 300PX;
     margin-bottom: 10px; */
  }
- h1{
+ h1 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  }
  h2 {
@@ -203,10 +202,7 @@ li a {
 }  
 
   @media (min-width: 768px) {
-     
-/* ul a {
-    display: block; 
-    } */
+    
   ul {
       display: flex;
   }
@@ -235,8 +231,29 @@ li a {
       border-radius: 5px;
       padding: 5px;
   }
+
+  h2 {
+      font-size: 30px;
+  }
+      
   h3 {
       top: 229px;
+    }
+  }
+  /* .row {
+    display: flex;
   }
   
-}
+  /* Create three equal columns that sits next to each other */
+  /* .photos {
+    flex: 33.33%;
+    padding: 5px;
+    
+  }
+  .row {
+      display: flex;
+    height: 50px;
+    width: 50px;
+  }
+  
+} */ 
