@@ -3,6 +3,7 @@ header {
   background-color: gray;
   width: 100%;
 }
+
 h1 { 
   color: red;
   font-size: 30px;
@@ -34,6 +35,7 @@ h1 {
 .list {
     margin-right: 100px;
 }
+
 .form {
   background-color: lightslategray;
   border: 2px solid blacks;
@@ -45,7 +47,7 @@ h1 {
   margin-bottom: 15px;
 }
 
-h2{
+h2 {
     margin-top: 10px;
     margin-bottom: 0px;
 }
@@ -54,8 +56,6 @@ input {
   height: 20px;
   margin-bottom: 0;
 }
-
-  
 
 aside {
   display: flex;
@@ -72,14 +72,6 @@ main {
  
 }
 
-  
-/* img {
-    display: flex;
-    width: 67px;
-    height: 67px;
-    border: 2px solid black;
-    border-radius: 10px;
-    margin: 20px 20px 20px 20px; */
 img {
   display: flex;
   height: 100px;
@@ -92,14 +84,12 @@ img {
 .movie {
   top:0;
   left: 0;
-  /* width: 60%; */
   height: 60%;
   padding: 5px;
   background-color: lightgray;
   margin-left: 0;
 }
 
-  
 .button {
   background-color: #e7e7e7; color: black;
   border: 1px solid black;
@@ -180,8 +170,7 @@ footer {
   }
 }
 
-/* @media (min-width:768px){ */
-  .nav {
+.nav {
     display: flex;
     flex-direction: column wrap;
   }
@@ -227,16 +216,12 @@ footer {
 
 }
 @media (min-width: 576px) and (max-width: 998px) {
-  /* .container {
-    background-color: yellow;
-  } */
   table {
     display: none;
   }
   .form {
     width: 400px;
     margin-left: 10px; 
-
   }  
   h3 {
     margin-left: 100px;
