@@ -1,0 +1,56 @@
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  } 
+  body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+.container {
+    display: grid;
+    grid-template-columns:repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+   
+}
+.board {
+    
+}
+
+
+
+.verticle {
+    grid-column: 2;
+    grid-row: 1/4;
+    border-right: 2px solid black;
+}
+.two {
+    grid-column: 1;
+    grid-row: 1/4;
+    border-right: 2px solid black;
+
+}
+.horizontal {
+    grid-column: 1/4;
+    grid-row: 2;
+    border-bottom: 2px solid black;
+
+}
+
+.three {
+    grid-column: 1/4;
+    grid-row: 1;
+    border-bottom: 2px solid black;
+}
+.o {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    border: 15px solid black;
+}

@@ -1,0 +1,30 @@
+.Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Container:hover > .even { 
+      transform: translate(200px) rotate(360deg) scale(1.5)
+      
+    }
+
+  .Container:hover > .odd{ transform: translate(200px) rotate(-360deg) scale(1.5) }
+  
+  .odd {
+    animation-direction: alternate; 
+  }
+  .square {
+    width: 50px;
+    height: 50px; 
+  }
+  
+  .even {
+    background-color: green;
+    transition: all 1s;
+   
+  }
+  .odd {
+    background-color: blue;
+    transition: 1s;
+  }
