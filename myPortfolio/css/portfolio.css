@@ -1,3 +1,4 @@
+
 header {
   height: 100px;
   background-color: gray;
@@ -49,10 +50,6 @@ h1 {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-#reset {
-
-  font-size: 20px;
-}
 
 h2 {
     margin-top: 10px;
@@ -65,11 +62,11 @@ input {
   width: 300px;
   margin-bottom: 0;
 }
-textarea{
+textarea {
   width: 300px;
 }
 
-aside {
+/* aside {
   display: flex;
   flex-direction: column;
   margin-left: 90px;
@@ -78,14 +75,11 @@ aside {
   margin-top: 20px;
   font-size: 20px;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
+} */
 
 i {
   margin-right: 100px;
- 
   margin-left: 10px;
-  
-
 }
 
 main {
@@ -111,7 +105,7 @@ img {
   margin-left: 0;
 }
 
-.button {
+button {
   background-color: #e7e7e7; color: black;
   border: 1px solid black;
   border-radius: 7px;
@@ -120,18 +114,32 @@ img {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 20px;
 }
+
+button:hover {
+  background-color: red;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  background-color: gray;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+  height: 80px;
+  }
    
   
-.footer {
+/* .footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   background-color: red;;
   height: 70px;
-}
+} */
 
 nav {
   display: flex;
@@ -146,7 +154,7 @@ nav {
 } 
 
 
-@media (min-width: 1401px){
+ @media (min-width: 1401px){ 
   .container {
     background-color: #69d0ef;
   }
@@ -160,11 +168,11 @@ nav {
         
   }
    
-  aside { 
+  /* aside { 
     display: flex;
     flex-direction: column;
     margin-left: 50px;
-  }
+  } */
 
   h1 {
     font-size: 50px;
