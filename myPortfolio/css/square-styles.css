@@ -1,30 +1,102 @@
+body {
+  background-color: gray;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  transition-duration: 5s
+}
+
+h1 {
+  font-size: 50px;
+  margin-top: 10px;
+  letter-spacing: 5px;
+  text-align: center;
+  animation: skew 3s infinite;
+  transform: skew(20deg);
+  animation-direction: alternate;
+  opacity: .9;
+}
+@keyframes skew {
+  0% {
+    transform: skewX(20deg);
+  }
+  100% {
+    transform: skewX(-20deg);
+  }
+}
+
 .Container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    margin-top: 50px;
   }
-  .Container:hover > .even { 
-      transform: translate(200px) rotate(360deg) scale(1.5)
-      
-    }
-
-  .Container:hover > .odd{ transform: translate(200px) rotate(-360deg) scale(1.5) }
-  
+   
   .odd {
-    animation-direction: alternate; 
+    width: 50px;
+    height: 50px;
+    transition: all 1s;
   }
-  .square {
+
+  .odd:nth-of-type(odd) {
+    transform: translate(200px) rotate(360deg) scale(1.5);
+  }
+  
+  .odd:hover{
+    width: 100px;
+    height: 100px;
+  }
+
+  .even{
     width: 50px;
     height: 50px; 
+    transition: all 3s;
+  }
+
+  .even:nth-of-type(even) {
+    transform: translate(-200px) rotate(360deg) scale(1.5);
+  }
+
+  .even:hover {
+    width: 25px;
+    height: 25px;
+  }
+   
+  .one{
+    background-color: turquoise
+  }
+  .two{
+    background-color: red;
+  }
+  .three {
+    background-color: yellow;
+  }
+  .four {
+    background-color: blue;
+  }
+  .five {
+    background-color: green;
+  }
+  .six {
+    background-color: orchid
+  }
+  .seven {
+    background-color: darkcyan
+  }
+  .eight {
+    background-color: goldenrod
+  }
+  .nine {
+    background-color: skyblue
+  }
+  .ten {
+    background-color: rgb(65, 225, 105)
+  }
+  .eleven {
+    background-color: olivedrab
+  }
+  .tweleve {
+    background-color: rgb(211, 15, 106)
   }
   
-  .even {
-    background-color: green;
-    transition: all 1s;
+  
    
-  }
-  .odd {
-    background-color: blue;
-    transition: 1s;
-  }
