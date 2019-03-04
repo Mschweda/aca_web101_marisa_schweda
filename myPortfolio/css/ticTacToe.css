@@ -1,56 +1,81 @@
- * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  } 
-  body {
-    width: 100%;
-    min-height: 100vh;
+body {
+    background-color: lightgreen;
+}
+
+h1 {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem 0;
-  }
-.container {
+    justify-content: center;
+    font-size: 50px;
+}
+
+.board {
     display: grid;
-    grid-template-columns:repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    margin-left: 400px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+#upperleft {
+    border-bottom: 2px black solid; 
+    border-right: 2px black solid;
+}
+
+#uppermiddle {
+    border-bottom: 2px black solid; 
+    border-right: 2px black solid;
+}
+
+#upperright {
+    border-bottom: 2px black solid;
+}
+
+
+#middleleft {
+    border-bottom: 2px black solid;
+    border-right: 2px black solid;
+}
+
+#middlemiddle {
+    border-right: 2px black solid;
+    border-bottom: 2px black solid; 
+}
+
+
+#middleright {
+    border-bottom: 2px black solid;
+}
+
+
+#lowerleft {
+    border-right: 2px black solid;
+}
+
+#lowermiddle {
+    border-right: 2px black solid;
+}
+
+.buttons {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    margin-top: 20px;
+    margin-left: 50px;
    
 }
-.board {
-    
-}
 
-
-
-.verticle {
-    grid-column: 2;
-    grid-row: 1/4;
-    border-right: 2px solid black;
-}
-.two {
-    grid-column: 1;
-    grid-row: 1/4;
-    border-right: 2px solid black;
-
-}
-.horizontal {
-    grid-column: 1/4;
-    grid-row: 2;
-    border-bottom: 2px solid black;
+button {
+    background-color: lightgray;
+    padding: 15px;
+    border: 1px solid black;
 
 }
 
-.three {
-    grid-column: 1/4;
-    grid-row: 1;
-    border-bottom: 2px solid black;
+button:hover {
+    background-color: white;
+   
 }
-.o {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    width: 60%;
-    height: 60%;
-    border-radius: 50%;
-    border: 15px solid black;
+.btn {
+    font-size: 20px; 
 }
+

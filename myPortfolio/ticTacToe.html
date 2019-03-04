@@ -4,23 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script type="text/javascript" src="script/ticTacToe.js"></script>
+    <script type="text/javascript" src="js/ticTacToe.js"></script>
     <link rel="stylesheet" href="css/ticTacToe.css">
     
     <title>Tic Tac Toe</title>
 </head>
-<body>
-    <div class="container">
+    <body>
+        <h1> TIC TAC TOE</h1>
+        <div class="board">
+            
+            <div class="square" id="upperleft" onclick="placeMark('upperleft')"></div>
+            <div class="square" id="uppermiddle" onclick="placeMark('uppermiddle')"></div>
+            <div class="square" id="upperright" onclick="placeMark('upperright')"></div>
+            <div class="square" id="middleleft" onclick="placeMark('middleleft')"></div>
+            <div class="square" id="middlemiddle" onclick="placeMark('middlemiddle')"></div>
+            <div class="square" id="middleright" onclick="placeMark('middleright')"></div>
+            <div class="square" id="lowerleft" onclick="placeMark('lowerleft')"></div>
+            <div class="square" id="lowermiddle" onclick="placeMark('lowermiddle')"></div>
+            <div class="square" id="lowerright" onclick="placeMark('lowerright')"></div>
+            
+                <div class="buttons">
+                    <button class="btn" onclick="changeMarkerToO()">O</button>
+                    <button class="btn" onclick ="changeMarkerToX()">x</button> 
     
-        <div class="board"></div>
-            <div class="verticle"></div>
-                <div class="o"></div>
-            <div class="horizontal"></div>
-            <div class="verticle two"></div>
-            <div class="horizontal three"></div>
-        
-
-    </div>
-        
-</body>
-</html>
+                </div>
+                                                                 
+    
+        </div> 
+    </body>
+</html> 
