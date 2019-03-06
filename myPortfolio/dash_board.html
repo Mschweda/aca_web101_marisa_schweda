@@ -7,30 +7,41 @@
     <link rel="stylesheet" href="css/dash_board.css">
     <title>Dash_board</title>
 </head>
-<body>
-
-    <div class="container">
-        <div class="header">
-            <h1>HELLO MARISA</h1>
-           
-            <h2>JANUARY 30, 2019</h2>
-        </div>
+    <body>
+        <div class="container">
+            <!-- header -->
+            <div class="header">
+                <h1>HELLO MARISA</h1>
+                <body onload="renderTime();">
+                <div id="clockDisplay" class="clockStyle">3 : 15 : 25 AM
+                </div>
+                <!-- header/location -->
+                <div class="box-outer"> 
+                    <div class="main_box">
+                        <button onclick="getLocation()">Get Location!</button>
+                        <p id="my-location"></p>
+                        <div class="bar top "></div>
+                        <div class="bar right delay"></div>
+                        <div class="bar bottom delay"></div>
+                        <div class="bar left "></div>
+                    </div>
+                </div>   
+            </div>
+            <!-- Nav -->
             <div class="nav">
-                <nav>
+                <nav> 
                     <div id="list_section">
-                        <h1 id="header">To-Do List</h1>
+                        <h1 id="head">To-Do List</h1>
                         <ul>
                           <li class="item"><b>#1 Positive Thoughts</b></li>
                         </ul>
-                        <div id="newItemButton"><button href="#">new item</button>
-                        </div>
                         <form id="newItemForm">
                             <input type="text" id="itemField" placeholder="Item" />
                             <input type="submit" id="add" value="add" />
                         </form>
                     </div>
                 </nav>
-            
+            <!-- Nav/Calc -->
                 <div class="calc">
                     <fieldset id="calc">
                         <form name="calculator">
@@ -58,28 +69,34 @@
                     </fieldset>
                 </div>
             </div>
+            <!-- Main/Img -->
                 <div class="main">
                     <main>
                         <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1952&q=8">
                     </main>
                 </div>
+                <!-- Aside -->
                 <div class="aside">
-                    <iframe src="http://free.timeanddate.com/clock/i6lztagm/n24/szw110/szh110/hoc00f/hbw0/hfc000/cf100/hgr0/facf90/mqcfff/mql6/mqw2/mqd74/mhcfff/mhl6/mhw1/mhd74/mmcf90/mml4/mmw1/mmd74/hhcfff/hmcfff"
+                    
+                    <iframe class="spot" src="https://open.spotify.com/embed/album/2XhQwji1ixgjca0XzkiTek" width="180" height="310" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>  
+ 
+                    <iframe class="clock" src="http://free.timeanddate.com/clock/i6lztagm/n24/szw110/szh110/hoc00f/hbw0/hfc000/cf100/hgr0/facf90/mqcfff/mql6/mqw2/mqd74/mhcfff/mhl6/mhw1/mhd74/mmcf90/mml4/mmw1/mmd74/hhcfff/hmcfff"
                     frameborder="0" width="110" height="110">
-                    </iframe>
-                </div>
-                <div class="footer">
-                    <div class="weather">
-                        <a class="weatherwidget-io" href="https://forecast7.com/en/30d27n97d74/austin/" data-label_1="AUSTIN" data-label_2="WEATHER" data-theme="original" >AUSTIN WEATHER</a>
-                        <script>
-                        !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-                        </script>
-                    </div>
+                    </iframe>  
                 </div>
         
+                <!-- Footer -->
+                <div class="footer">
+                    <div class="weather">
+                        <a class="weatherwidget-io" href="https://forecast7.com/en/30d27n97d74/austin/?unit=us" data-label_1="AUSTIN" data-label_2="WEATHER" data-theme="original" >AUSTIN WEATHER</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');</script>
+                        
+                    </div>
+                </div>
+               
                 <script
                 src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-                <script src="js/dash_board.js"></script>
+                <script src="script/dash_board.js"></script>
 
         </div>
     </body>
