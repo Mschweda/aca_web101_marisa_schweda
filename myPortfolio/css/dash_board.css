@@ -27,6 +27,14 @@ h1 {
     font-family: monospace;
     margin-bottom: 10px; 
 }
+#ship {
+    width:56px;
+    height:56px;
+    position: absolute;
+    background-image:url(https://4.bp.blogspot.com/-etyNTo8hpIE/Uf8BfJYeymI/AAAAAAAAA5Q/9emQpKVj1fo/s1600/fighter-01.png);
+    background-size:cover;
+}
+
 .box-outer {
     display: flex;
     justify-content: center;

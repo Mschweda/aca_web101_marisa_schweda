@@ -39,7 +39,7 @@ function renderTime(){
   var day = mydate.getDay();
   var month = mydate.getMonth();
   var daym = mydate.getDate ();
-  var dayarray = new Array ("Sunday",   "Monday", "Tuesday", "Wesnesday",     "Thursday", "Friday", "Saturday");
+  var dayarray = new Array ("Sunday",   "Monday", "Tuesday", "Wednesday",     "Thursday", "Friday", "Saturday");
   var montharray= new Array("January",    "February", "March", "April",         "May", "June", "July", "August", "September", "October", "November",       "December");
   
   // date end
@@ -66,6 +66,21 @@ if(s < 10){
     myClock.innerText =  "" + dayarray[day]+ "  " +montharray[month]+ " "  +daym+ ", " +year+ "  " +h+ ":" +m+ ":" +s;
   
       setTimeout('renderTime()', 1000)
+}
+window.addEventListener('mousemove', nutterbutter);
+var _el = document.getElementById('ship');
+_el.addEventListener('dblclick', function(){
+	window.addEventListener('mousemove', nutterbutter);
+	_el.addEventListener('dblclick', removeNutter);
+});
+
+function removeNutter(){
+	window.removeEventListener('mousemove', nutterbutter);
+	_el.removeEventListener('dblclick', removeNutter);
+}
+function nutterbutter(){
+	_el.style.top = event.clientY + "px";
+	_el.style.left = event.clientX + "px";
 }
 
                         
