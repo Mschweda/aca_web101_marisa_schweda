@@ -33,6 +33,7 @@ h1 {
     position: absolute;
     background-image:url(https://4.bp.blogspot.com/-etyNTo8hpIE/Uf8BfJYeymI/AAAAAAAAA5Q/9emQpKVj1fo/s1600/fighter-01.png);
     background-size:cover;
+    visibility: hidden;
 }
 
 .box-outer {
@@ -328,9 +329,6 @@ iframe.spot {
         visibility: visible;
      
     }
-    
-
-   
 }
     
 @media (min-width: 768px) {
@@ -340,6 +338,9 @@ iframe.spot {
     }
     .header {
         font-size: 30px;
+    }
+    #ship {
+        visibility: visible;
     }
    
 }
